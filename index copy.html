@@ -30,7 +30,7 @@
     <header id="header" class="color-margenes-header-footer">
 
         <!-- Logo -->
-        <div class="me-auto p-2" id="header-logo">
+        <div class="me-auto p-2 me-lg-0" id="header-logo">
             <a href="index.html">
                 <img src="assets/img/tipografia-santa-punk.png" alt="Logo Santa Punk">
             </a>
@@ -38,23 +38,29 @@
 
         <!-- Barra de búsqueda y carrito -->
         <div class="order-lg-3 p-2" id="buscador-y-carrito">
-            <a href="">
+            <a class="p-2" href="">
                 <img src="assets/img/search-icon.png" alt="Buscar">
             </a>
-            <a href="">
+            <a class="p-2" href="">
                 <img src="assets/img/bag-icon.png" alt="Carrito">
             </a>
         </div>
 
         <!-- Inicio de barra de navegación -->
         <nav class="navbar navbar-expand-lg order-lg-2 p-2">
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg"
-                aria-controls="navbarOffcanvasLg">
+            
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg"
                 aria-labelledby="navbarOffcanvasLgLabel">
-                <ul class="menu-nav navbar-nav me-auto mb-2 mb-lg-0">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title fw-bold" id="offcanvasExampleLabel">Santa Punk</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                <ul class="offcanvas-body menu-nav navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="item-menu-nav nav-item">
                         <a class="nav-link" href="pages/catalogo.html">Productos</a>
                         <div class="submenu color-header-footer">
@@ -98,7 +104,6 @@
                 </ul>
             </div>
 
-            </div>
         </nav>
         <!-- Fin de barra de navegación -->
 

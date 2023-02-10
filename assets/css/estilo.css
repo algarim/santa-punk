@@ -59,7 +59,6 @@ a {
     justify-content: space-between;
     align-items: center;
     width: 85px;
-    margin-left: 0.5vw;
 }
 
 #buscador-y-carrito input {
@@ -103,6 +102,22 @@ nav ul li:hover .submenu {
 
 #navbarOffcanvasLg{
     background-color: #f8e4f4;
+}
+
+@font-face {
+    font-family: Old Press Original;
+    src: url("../fonts/old-press-original.otf");
+  }
+
+.offcanvas-title{
+    font-family: Old Press Original;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin: auto;
+}
+
+.offcanvas-body{
+    margin: auto;
 }
 
 .submenu {
