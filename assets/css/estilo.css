@@ -42,6 +42,7 @@ a {
     /* background-color: white; */
     position: sticky;
     top: 0;
+    z-index:9;
 
     /* FLEX */
     display: flex;
@@ -98,6 +99,7 @@ nav ul li:hover .submenu {
     flex-wrap: wrap;
     /* justify-content: space-evenly; */
     background-color: #f8e4f4;
+    border-radius: 5px;
 }
 
 #navbarOffcanvasLg{

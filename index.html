@@ -38,13 +38,20 @@
 
         <!-- Barra de búsqueda y carrito -->
         <div class="order-lg-3 p-2" id="buscador-y-carrito">
+
+            <!-- BUSQUEDA -->
             <a class="p-2" href="">
                 <img src="assets/img/search-icon.png" alt="Buscar">
             </a>
-            <a class="p-2" href="">
+
+            <!-- CARRITO -->
+
+            <!-- Button trigger modal -->
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#carritoModal">
                 <img src="assets/img/bag-icon.png" alt="Carrito">
-            </a>
+            </button>
         </div>
+
 
         <!-- Inicio de barra de navegación -->
         <nav class="navbar navbar-expand-lg order-lg-2 p-2">
@@ -110,9 +117,53 @@
 
     </header>
 
+
+    <!-- Modal CARRITO -->
+    <div class="modal fade" id="carritoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Carrito</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="center-text">Tu carrito está vacío</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Finalizar compra</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <main>
         <!-- Banner -->
-        <img id="banner" src="assets/img/banner-recortado.jpg" alt="Banner">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/img/banner.jpg" class="d-none d-sm-block w-100" alt="Banner 1">
+                    <img src="assets/img/banner-sm.jpg" class="d-block d-sm-none w-100" alt="Banner 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/banner-2.jpg" class="d-none d-sm-block w-100" alt="Banner 2">
+                    <img src="assets/img/banner-sm-2.jpg" class="d-block d-sm-none w-100" alt="Banner 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/banner-3.jpg" class="d-none d-sm-block w-100" alt="Banner 3">
+                    <img src="assets/img/banner-sm-3.jpg" class="d-block d-sm-none w-100" alt="Banner 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
 
         <!-- Secciones de productos destacados -->
         <section class="destacados-inicio" id="lo-nuevo">
