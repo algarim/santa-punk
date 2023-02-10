@@ -78,17 +78,12 @@ nav{
     display: flex;
     justify-content: space-evenly;
 } */
-
+/* 
 .item-menu-nav {
     display: inline-block;
     text-align: center;
     margin: 0 0.5vw;
-}
-
-#navbar-container{
-    display: flex;
-    justify-content: space-between;
-}
+} */
 
 .navbar ul li a:hover {
     color: #dc0083;
