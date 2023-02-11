@@ -7,6 +7,17 @@
 
 ul {
     list-style-type: none;
+    padding: 0;
+}
+
+h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+h3{
+    font-size: 1.17rem;
+    font-weight: bold;
 }
 
 body {
@@ -356,9 +367,9 @@ nav{
     line-height: 3;
 }
 
-#ver-mas a {
+.link-ver-mas {
     border: 1px solid black;
-    border-radius: 30px;
+    border-radius: 12px;
     padding: 10px;
     background-color: #dbf3fd;
 }
@@ -421,6 +432,11 @@ footer li {
     list-style-type: none;
 }
 
+footer h3 {
+    font-size: 1.17rem;
+    font-weight: bold;
+}
+
 #footer-logo {
     margin-right: 20px;
     height: 280px;
@@ -437,12 +453,16 @@ footer li {
     padding-bottom: 15px;
 }
 
+.footer-subseccion ul{
+    padding: 0;
+}
+
 .footer-subseccion h3 {
     margin-bottom: 10px;
 }
 
 .footer-subseccion img {
-    height: 12.3pt;
+    height: 1.025rem;
 }
 
 .footer-subseccion li a:hover {
@@ -454,6 +474,10 @@ footer li {
     padding: 7.5px 15px 15px 15px;
     margin-left: 20px;
     align-self: flex-start;
+}
+
+#newsletter p{
+    margin: 0;
 }
 
 #newsletter-form input {
@@ -579,6 +603,10 @@ footer li {
         grid-template-columns: repeat(3, 1fr);
     }
 
+    .articulo-catalogo:hover {
+        transform: none;
+    }
+    
     .productos-destacados {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -687,6 +715,11 @@ footer li {
 }
 
 @media (max-width: 480px) {
+
+    body {
+        font-size: 1.1rem;
+    }
+
     .productos-catalogo {
         display: block;
     }
