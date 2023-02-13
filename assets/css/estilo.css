@@ -10,15 +10,25 @@ ul {
     padding: 0;
 }
 
-h2{
+h1 {
+    font-weight: bold;
+}
+
+h2 {
     font-size: 1.5rem;
     font-weight: bold;
 }
 
-h3{
+h3 {
     font-size: 1.17rem;
     font-weight: bold;
 }
+
+h4 {
+    font-size: 1.0831rem;
+    font-weight: bold;
+}
+
 
 body {
     font-family: 'Quicksand', sans-serif;
@@ -264,7 +274,7 @@ nav{
 .articulo-descripcion {
     padding: 5px;
     text-align: center;
-    font-size: 14pt;
+    font-size: 1.17rem;
 }
 
 .articulo-comprar {
@@ -272,7 +282,7 @@ nav{
 }
 
 .filtros-catalogo {
-    font-size: 12pt;
+    font-size: 1rem;
     width: 15vw;
     margin-right: 20px;
     text-align: left;
@@ -285,6 +295,11 @@ nav{
 
 .filtros-tipos ul {
     margin-left: 10px;
+}
+
+.filtros-tipos li:hover {
+    opacity: 40%;
+    color: #dc0083;
 }
 
 .titulo-categoria {
@@ -333,11 +348,11 @@ nav{
 }
 
 .descripcion-destacados h2 {
-    font-size: 30pt;
+    font-size: 2rem;
 }
 
 .descripcion-destacados p {
-    font-size: 17pt;
+    font-size: 1.4rem;
 }
 
 
@@ -379,7 +394,7 @@ nav{
 }
 
 .pregunta-respuesta p {
-    font-size: 13pt;
+    font-size: 1.0831rem;
 }
 
 .pregunta-respuesta a {
@@ -395,15 +410,12 @@ nav{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: inherit;
 }
 
 .nosotros-imagenes img {
     height: 430px;
     margin: 15px 0;
-
 }
-
 
 /* FOOTER */
 
@@ -453,7 +465,7 @@ footer h3 {
     padding-bottom: 15px;
 }
 
-.footer-subseccion ul{
+.footer-subseccion ul {
     padding: 0;
 }
 
@@ -476,7 +488,7 @@ footer h3 {
     align-self: flex-start;
 }
 
-#newsletter p{
+#newsletter p {
     margin: 0;
 }
 
@@ -531,17 +543,18 @@ footer h3 {
 }
 
 .item-formulario {
-    font-size: 14pt;
+    font-size: 1.17rem;
     padding: 7px;
     margin: 10px 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Quicksand', sans-serif;
     width: 600px;
 }
 
 .botones-formulario input {
-    font-size: 15pt;
-    padding: 3px;
+    font-size: 1.25rem;
+    padding: 3px 6px;
     margin-right: 5px;
+    font-family: 'Quicksand', sans-serif
 }
 
 .espacio-dsps-de-parrafo {
@@ -583,10 +596,6 @@ footer h3 {
     .ajuste-flex {
         flex: 1 1 38%;
     }
-
-    #tematicas-destacadas {
-        grid-template-columns: 1fr 1fr;
-    }
 }
 
 @media (max-width: 1024px) {
@@ -606,13 +615,17 @@ footer h3 {
     .articulo-catalogo:hover {
         transform: none;
     }
-    
+
     .productos-destacados {
         grid-template-columns: repeat(3, 1fr);
     }
+ 
+    #tematicas-destacadas {
+        grid-template-columns: 1fr 1fr;
+    }
 
     .menu-catalogo-font {
-        font-size: 12pt;
+        font-size: 1rem;
         font-family: 'Quicksand', sans-serif;
     }
 
@@ -689,11 +702,11 @@ footer h3 {
 
 @media (max-width: 600px) {
 
-    .btn{
+    .btn {
         padding: 5px;
     }
 
-    .navbar-toggler{
+    .navbar-toggler {
         padding: 5px;
     }
 
@@ -724,17 +737,29 @@ footer h3 {
         display: block;
     }
 
-    .productos-destacados {
-        display: block;
-        margin: 0 15px;
-    }
-
     .articulo-catalogo {
         margin-bottom: 15px;
     }
+
+    .productos-destacados {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 15px;
+    }
+
+    .productos-destacados .articulo-catalogo{
+        width: 90%;
+    }
+
+
 }
 
 @media (max-width: 350px) {
+
+    .descripcion-destacados p {
+        display: none;
+    }
 
     #footer-logo {
         height: 200px;
