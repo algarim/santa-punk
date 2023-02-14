@@ -28,67 +28,121 @@
     </div>
 
     <!-- HEADER -->
-
     <header id="header" class="color-margenes-header-footer">
 
-        <div id="header-logo">
+        <!-- Logo -->
+        <div class="me-auto p-2 me-lg-0" id="header-logo">
             <a href="../index.html">
-                <img src="../assets/img/tipografia-santa-punk.png" alt="Logo Santa Punk">
+                <img src="assets/img/tipografia-santa-punk.png" alt="Logo Santa Punk">
             </a>
         </div>
+
+        <!-- Barra de búsqueda y carrito -->
+        <div class="order-lg-3 p-2" id="buscador-y-carrito">
+
+            <!-- BUSQUEDA -->
+
+            <div class="btn-group dropstart">
+                <button type="button" class="btn" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="assets/img/search-icon.png" alt="Buscar" name="Buscar">
+                </button>
+                <div class="dropdown-menu p-0">
+                    <form class="d-block m-0" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search"
+                            name="Buscar">
+                        <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+                    </form>
+                </div>
+            </div>
+
+            <!-- CARRITO -->
+
+            <!-- Button trigger modal -->
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#carritoModal">
+                <img src="assets/img/bag-icon.png" alt="Carrito">
+            </button>
+        </div>
+
+
         <!-- Inicio de barra de navegación -->
-        <nav>
-            <ul class="menu-nav">
-                <li class="item-menu-nav">
-                    <a href="catalogo.html">Productos</a>
-                    <div class="submenu color-header-footer">
-                        <div class="submenu-categoria">
-                            <h4>Tipos</h4>
-                            <ul class="submenu-lista">
-                                <li> <a href="almohadones.html">Almohadones</a> </li>
-                                <li> <a href="cartucheras.html">Cartucheras</a> </li>
-                                <li> <a href="cuadernos.html">Cuadernos</a> </li>
-                                <li> <a href="indumentaria.html">Indumentaria</a></li>
-                                <li> <a href="tazas.html">Tazas</a> </li>
-                            </ul>
+        <nav class="navbar navbar-expand-lg order-lg-2 p-2">
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end navbar-color w-auto p-3" tabindex="-1" id="navbarOffcanvasLg"
+                aria-labelledby="navbarOffcanvasLgLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title fw-bold" id="offcanvasExampleLabel">Santa Punk</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <ul class="offcanvas-body menu-nav navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="item-menu-nav nav-item">
+                        <a class="nav-link" href="catalogo.html">Productos</a>
+                        <div class="submenu color-header-footer">
+                            <div class="submenu-categoria">
+
+                                <ul class="submenu-lista">
+                                    <h4>Tipos</h4>
+                                    <li> <a href="#">Almohadones</a> </li>
+                                    <li> <a href="#">Cartucheras</a> </li>
+                                    <li> <a href="#">Cuadernos</a> </li>
+                                    <li> <a href="#">Indumentaria</a></li>
+                                    <li> <a href="#">Tazas</a> </li>
+                                </ul>
+                            </div>
+
+                            <div class="submenu-categoria">
+
+                                <ul class="submenu-lista">
+                                    <h4>Temáticas</h4>
+                                    <li> <a href="#">Demon Slayer</a> </li>
+                                    <li> <a href="#">El señor de los anillos</a>
+                                    </li>
+                                    <li> <a href="#">Harry Potter</a> </li>
+                                    <li> <a href="#">Mario Bros</a></li>
+                                    <li> <a href="#">Marvel</a> </li>
+                                    <li> <a href="#">Naruto</a> </li>
+                                    <li> <a href="#">Sailor Moon</a> </li>
+                                    <li> <a href="#">Star Wars</a> </li>
+                                    <li> <a href="#">Stranger Things</a> </li>
+                                    <li> <a href="#">Studio Ghibli</a> </li>
+                                </ul>
+                            </div>
                         </div>
 
-                        <div class="submenu-categoria">
-                            <h4>Temáticas</h4>
-                            <ul class="submenu-lista">
-                                <li> <a href="demon-slayer.html">Demon Slayer</a> </li>
-                                <li> <a href="senor-de-los-anillos.html">El señor de los anillos</a>
-                                </li>
-                                <li> <a href="harry-potter.html">Harry Potter</a> </li>
-                                <li> <a href="mario-bros.html">Mario Bros</a></li>
-                                <li> <a href="marvel.html">Marvel</a> </li>
-                                <li> <a href="naruto.html">Naruto</a> </li>
-                                <li> <a href="sailor-moon.html">Sailor Moon</a> </li>
-                                <li> <a href="star-wars.html">Star Wars</a> </li>
-                                <li> <a href="stranger-things.html">Stranger Things</a> </li>
-                                <li> <a href="studio-ghibli.html">Studio Ghibli</a> </li>
-                            </ul>
-                        </div>
-                    </div>
+                    </li>
+                    <li class="item-menu-nav nav-item"> <a class="nav-link" href="lo-nuevo.html">Lo nuevo</a>
+                    </li>
+                    <li class="item-menu-nav nav-item"> <a class="nav-link" href="lo-mas-vendido.html">Lo más
+                            vendido</a> </li>
+                    <li class="item-menu-nav nav-item"> <a class="nav-link" href="combos.html">Combos</a> </li>
+                </ul>
+            </div>
 
-                </li>
-                <li class="item-menu-nav"> <a href="lo-nuevo.html">Lo nuevo</a> </li>
-                <li class="item-menu-nav"> <a href="lo-mas-vendido.html">Lo más vendido</a> </li>
-                <li class="item-menu-nav"> <a href="combos.html">Combos</a> </li>
-                <li class="item-menu-nav"> <a href="para-regalos.html">Ideas para regalos</a> </li>
-            </ul>
         </nav>
         <!-- Fin de barra de navegación -->
-        <!-- Barra de búsqueda y carrito -->
-        <div id="buscador-y-carrito">
-            <a href="">
-                <img src="../assets/img/search-icon.png" alt="Buscar">
-            </a>
-            <a href="">
-                <img src="../assets/img/bag-icon.png" alt="Carrito">
-            </a>
-        </div>
     </header>
+
+    <!-- Modal CARRITO -->
+    <div class="modal fade" id="carritoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Carrito</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="center-text">Tu carrito está vacío</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Finalizar compra</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <main class="margenes">
         <h1 class="titulo-de-pagina">Preguntas Frecuentes</h1>

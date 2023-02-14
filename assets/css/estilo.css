@@ -124,7 +124,7 @@ nav{
     border-radius: 5px;
 }
 
-#navbarOffcanvasLg {
+.navbar-color {
     background-color: #f8e4f4;
 }
 
@@ -137,11 +137,7 @@ nav{
     font-family: Old Press Original;
     font-size: 1.8rem;
     text-transform: uppercase;
-    margin: auto;
-}
-
-.offcanvas-body {
-    margin: auto;
+    margin-right: 35px;
 }
 
 .submenu {
