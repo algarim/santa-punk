@@ -283,12 +283,12 @@ nav{
     justify-content: center;
 }
 
-.articulo-descripcion h6{
+.articulo-descripcion h6 {
     padding: 0;
     margin: 0;
 }
 
-.articulo-descripcion p{
+.articulo-descripcion p {
     padding: 0;
     margin: 0;
 }
@@ -403,6 +403,15 @@ nav{
     border-radius: 12px;
     padding: 10px;
     background-color: #dbf3fd;
+    width: auto;
+
+    transition: all 0.1s;
+}
+
+.link-ver-mas:hover {
+    background-color: #dc0083;
+    color: white;
+    font-size: 110%;
 }
 
 .pregunta-respuesta {
@@ -424,14 +433,15 @@ nav{
 
 .nosotros-imagenes {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
+
+    height: 24vw;
 }
 
 .nosotros-imagenes img {
-    height: 430px;
+    max-height: 100%;
     margin: 15px 0;
-    object-fit: cover;
 }
 
 /* FOOTER */
@@ -636,7 +646,7 @@ footer h3 {
     .productos-destacados {
         grid-template-columns: repeat(3, 1fr);
     }
- 
+
     #tematicas-destacadas {
         grid-template-columns: 1fr 1fr;
     }
@@ -715,6 +725,10 @@ footer h3 {
     .item-formulario {
         width: auto;
     }
+
+    #footer-logo {
+        height: 200px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -767,11 +781,14 @@ footer h3 {
         margin: 0 15px;
     }
 
-    .articulo-catalogo{
+    .articulo-catalogo {
         width: 80%;
         margin-bottom: 20px;
     }
 
+    #footer-logo {
+        height: 190px;
+    }
 
 }
 
@@ -782,7 +799,6 @@ footer h3 {
     }
 
     #footer-logo {
-        height: 200px;
         margin-bottom: 10px;
     }
 }
