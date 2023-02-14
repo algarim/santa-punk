@@ -64,6 +64,8 @@ a {
     position: sticky;
     top: 0;
     z-index: 9;
+    padding-top: 0;
+    padding-bottom: 0;
 
     /* FLEX */
     display: flex;
