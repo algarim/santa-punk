@@ -94,7 +94,7 @@ a {
     width: 85px;
 }
 
-#buscador-y-carrito input {
+.navbar-buscador input {
     font-size: 1em;
     font-family: 'Quicksand', sans-serif;
 }
@@ -103,16 +103,35 @@ a {
     height: 1.65em;
 }
 
-
-/* 
-nav{
-    width: 4%;
+.offcanvas-top-color {
+    background-color: #f8e4f4;
 }
 
-.menu-nav{
+.offcanvas-top.h-auto {
+    bottom: initial;
+}
+
+.navbar-buscador {
     display: flex;
-    justify-content: space-evenly;
-} */
+    align-items: center;
+    justify-content: flex-start;
+    width: 95%;
+}
+
+.navbar-buscador button{
+    font-size: 1.17rem;
+}
+
+.btn-outline-success-colores {
+    border: 1px solid #005a81;
+    color: #005a81;
+    background-color: #dbf3fd;
+}
+
+.btn-outline-success-colores:hover {
+    color: white;
+    background-color: #dc0083;
+}
 
 .item-menu-nav {
     text-align: center;
@@ -700,6 +719,16 @@ footer h3 {
 
 @media (max-width: 800px) {
 
+    .navbar-buscador button{
+        font-size: 1.05rem;
+        margin-right: 15px;
+    }
+
+    .navbar-buscador input{
+        font-size: 1.05rem;
+    }
+
+
     .destacados-inicio {
         flex-direction: column;
     }
@@ -823,6 +852,15 @@ footer h3 {
 }
 
 @media (max-width: 350px) {
+
+    .navbar-buscador button{
+        font-size: 1rem;
+        margin-right: 10px;
+    }
+
+    .navbar-buscador input{
+        font-size: 1rem;
+    }
 
     .descripcion-destacados p {
         display: none;
