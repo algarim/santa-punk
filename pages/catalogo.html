@@ -76,7 +76,7 @@
             <div class="offcanvas offcanvas-end navbar-color w-auto p-3" tabindex="-1" id="navbarOffcanvasLg"
                 aria-labelledby="navbarOffcanvasLgLabel">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title fw-bold" id="offcanvasExampleLabel">Santa Punk</h5>
+                    <h5 class="offcanvas-title offcanvas-logo fw-bold" id="offcanvasExampleLabel">Santa Punk</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <ul class="offcanvas-body menu-nav navbar-nav me-auto mb-2 mb-lg-0">
@@ -157,13 +157,14 @@
 
 
                 <!-- Botón FILTROS -->
-                <div class="boton-catalogo" id="boton-filtros">
-                    <button class="menu-catalogo-font boton-padding">
+
+                <div class="boton-catalogo">
+                    <button class="btn d-lg-none d-flex align-items-center" id="boton-filtros" type="button"
+                        data-bs-toggle="offcanvas"  data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive">
                         <img src="../assets/img/filter.png" alt="">
-                        <p>Filtros</p>
+                        <p class="p-0 m-0">Filtros</p>
                     </button>
                 </div>
-
 
                 <!-- Menú de páginas del cátalogo -->
                 <ul class="menu-paginas menu-catalogo-font" id="menu-paginas-superior">
@@ -441,44 +442,52 @@
 
 
         <!-- FILTROS PARA EL CATALOGO -->
-        <div class="filtros-catalogo">
-            <h2>Filtros</h2>
-            <div class="filtros-tipos">
-                <h3>Especiales</h3>
-                <ul class="main-links-hover">
-                    <li> <a href=""> ¡Con descuento! </a> </li>
-                    <li> <a href=""> Lo nuevo </a> </li>
-                    <li> <a href=""> Lo más vendido </a> </li>
-                    <li> <a href=""> Combos </a> </li>
-                    <li> <a href=""> Ideas para regalo </a> </li>
-                </ul>
+        <div class="offcanvas-lg offcanvas-start w-auto p-3" tabindex="-1" id="offcanvasResponsive"
+            aria-labelledby="offcanvasResponsiveLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title fw-bold mayus" id="offcanvasResponsiveLabel">Filtros</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                    data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
             </div>
+            <div class="filtros-catalogo offcanvas-body d-block w-auto">
+                <h2 class="d-lg-block d-none mb-3">Filtros</h2>
+                <div class="filtros-tipos">
+                    <h3>Especiales</h3>
+                    <ul class="main-links-hover">
+                        <li> <a href=""> ¡Con descuento! </a> </li>
+                        <li> <a href=""> Lo nuevo </a> </li>
+                        <li> <a href=""> Lo más vendido </a> </li>
+                        <li> <a href=""> Combos </a> </li>
+                        <li> <a href=""> Ideas para regalo </a> </li>
+                    </ul>
+                </div>
 
-            <div class="filtros-tipos">
-                <h3>Objetos</h3>
-                <ul class="main-links-hover">
-                    <li> <a href=""> Almohadones </a> </li>
-                    <li> <a href=""> Cartucheras </a> </li>
-                    <li> <a href=""> Cuadernos </a> </li>
-                    <li> <a href=""> Indumentaria </a> </li>
-                    <li> <a href=""> Tazas </a> </li>
-                </ul>
-            </div>
+                <div class="filtros-tipos">
+                    <h3>Objetos</h3>
+                    <ul class="main-links-hover">
+                        <li> <a href=""> Almohadones </a> </li>
+                        <li> <a href=""> Cartucheras </a> </li>
+                        <li> <a href=""> Cuadernos </a> </li>
+                        <li> <a href=""> Indumentaria </a> </li>
+                        <li> <a href=""> Tazas </a> </li>
+                    </ul>
+                </div>
 
-            <div class="filtros-tipos">
-                <h3>Temáticas</h3>
-                <ul class="main-links-hover">
-                    <li> <a href=""> Demon Slayer </a> </li>
-                    <li> <a href=""> El Señor de los Anillos </a> </li>
-                    <li> <a href=""> Harry Potter </a> </li>
-                    <li> <a href=""> Mario Bros </a> </li>
-                    <li> <a href=""> Marvel </a> </li>
-                    <li> <a href=""> Naruto </a> </li>
-                    <li> <a href=""> Sailor Moon </a> </li>
-                    <li> <a href=""> Star Wars </a> </li>
-                    <li> <a href=""> Stranger Things </a> </li>
-                    <li> <a href=""> Studio Ghibli </a> </li>
-                </ul>
+                <div class="filtros-tipos">
+                    <h3>Temáticas</h3>
+                    <ul class="main-links-hover">
+                        <li> <a href=""> Demon Slayer </a> </li>
+                        <li> <a href=""> El Señor de los Anillos </a> </li>
+                        <li> <a href=""> Harry Potter </a> </li>
+                        <li> <a href=""> Mario Bros </a> </li>
+                        <li> <a href=""> Marvel </a> </li>
+                        <li> <a href=""> Naruto </a> </li>
+                        <li> <a href=""> Sailor Moon </a> </li>
+                        <li> <a href=""> Star Wars </a> </li>
+                        <li> <a href=""> Stranger Things </a> </li>
+                        <li> <a href=""> Studio Ghibli </a> </li>
+                    </ul>
+                </div>
             </div>
         </div>
 
