@@ -12,6 +12,7 @@ ul {
 
 h1 {
     font-weight: bold;
+    font-size: 2.1rem;
 }
 
 h2 {
@@ -428,12 +429,11 @@ nav{
 }
 
 .nosotros-texto {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .nosotros-imagenes {
     display: flex;
-    flex-wrap: nowrap;
     justify-content: space-between;
 
     height: 24vw;
@@ -441,7 +441,7 @@ nav{
 
 .nosotros-imagenes img {
     max-height: 100%;
-    margin: 15px 0;
+    margin: 0 10px 15px 10px;
 }
 
 /* FOOTER */
@@ -656,6 +656,10 @@ footer h3 {
         font-family: 'Quicksand', sans-serif;
     }
 
+    .nosotros-texto p {
+        font-size: 1.05rem;
+    }
+
     footer {
         flex-direction: column;
     }
@@ -726,12 +730,24 @@ footer h3 {
         width: auto;
     }
 
+    .nosotros-imagenes {
+        height: 36vw;
+    }
+
     #footer-logo {
         height: 200px;
+    }
+
+    .desaparecer-800px {
+        display: none;
     }
 }
 
 @media (max-width: 600px) {
+
+    .desaparecer-600px {
+        display: none;
+    }
 
     .btn {
         padding: 5px;
@@ -756,6 +772,20 @@ footer h3 {
     .productos-destacados {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .nosotros-texto {
+        margin-bottom: 20px;
+    }
+
+    .nosotros-imagenes {
+        height: auto;
+    }
+
+    .nosotros-imagenes img{
+        width: 88vw;
+        margin: 0;
+    }
+
 }
 
 @media (max-width: 480px) {
