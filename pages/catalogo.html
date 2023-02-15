@@ -43,16 +43,24 @@
 
             <!-- BUSQUEDA -->
 
-            <div class="btn-group dropstart">
-                <button type="button" class="btn" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="../assets/img/search-icon.png" alt="Buscar" name="Buscar">
-                </button>
-                <div class="dropdown-menu p-0">
-                    <form class="d-block m-0" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search"
-                            name="Buscar">
-                        <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+                aria-controls="offcanvasTop">
+                <img src="../assets/img/search-icon.png" alt="Buscar" name="Buscar">
+            </button>
+
+            <div class="offcanvas offcanvas-top offcanvas-top-color h-auto pb-2" tabindex="-1" id="offcanvasTop"
+                aria-labelledby="offcanvasTopLabel">
+                <div class="offcanvas-header d-flex margenes">
+                    <form class="navbar-buscador m-0 me-1" role="search">
+
+                        <input class="form-control altura" type="search"
+                            placeholder="Buscar en la tienda" aria-label="Search" name="Buscar">
+
+                        <button class="btn form-control altura" type="submit">
+                            <img id="lupa-searchbar" src="../assets/img/search-icon.png" alt="Buscar" name="Buscar">
+                        </button>
                     </form>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
             </div>
 

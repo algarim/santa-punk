@@ -97,6 +97,9 @@ a {
 .navbar-buscador input {
     font-size: 1em;
     font-family: 'Quicksand', sans-serif;
+    border: none;
+    border-radius: 0;
+    background-color: none;
 }
 
 #buscador-y-carrito img {
@@ -119,18 +122,22 @@ a {
 }
 
 .navbar-buscador button{
-    font-size: 1.17rem;
+    background-color: white;
+    border: none;
+    border-radius: 0;
+    width: auto;
 }
 
-.btn-outline-success-colores {
-    border: 1px solid #005a81;
-    color: #005a81;
-    background-color: #dbf3fd;
+#lupa-searchbar {
+    height: 26.5px !important;
 }
 
-.btn-outline-success-colores:hover {
-    color: white;
-    background-color: #dc0083;
+.altura {
+    height: 50px;
+}
+
+.navbar-buscador button:hover {
+    background-color: #73d6ff;
 }
 
 .item-menu-nav {
@@ -719,16 +726,6 @@ footer h3 {
 
 @media (max-width: 800px) {
 
-    .navbar-buscador button{
-        font-size: 1.05rem;
-        margin-right: 15px;
-    }
-
-    .navbar-buscador input{
-        font-size: 1.05rem;
-    }
-
-
     .destacados-inicio {
         flex-direction: column;
     }
@@ -852,11 +849,6 @@ footer h3 {
 }
 
 @media (max-width: 350px) {
-
-    .navbar-buscador button{
-        font-size: 1rem;
-        margin-right: 10px;
-    }
 
     .navbar-buscador input{
         font-size: 1rem;
