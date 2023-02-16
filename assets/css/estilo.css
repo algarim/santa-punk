@@ -41,7 +41,7 @@ body {
     overflow-x: hidden;
 }
 
-.mayus{
+.mayus {
     text-transform: uppercase;
 }
 
@@ -121,7 +121,7 @@ a {
     width: 95%;
 }
 
-.navbar-buscador button{
+.navbar-buscador button {
     background-color: white;
     border: none;
     border-radius: 0;
@@ -807,7 +807,7 @@ footer h3 {
         height: auto;
     }
 
-    .nosotros-imagenes img{
+    .nosotros-imagenes img {
         width: 88vw;
         margin: 0;
     }
@@ -850,12 +850,16 @@ footer h3 {
 
 @media (max-width: 350px) {
 
-    .navbar-buscador input{
+    .navbar-buscador input {
         font-size: 1rem;
     }
 
     .descripcion-destacados p {
         display: none;
+    }
+
+    .link-ver-mas:hover {
+        font-size: 100%;
     }
 
     #footer-logo {
