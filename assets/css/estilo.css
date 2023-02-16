@@ -799,6 +799,10 @@ footer h3 {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .titulo-categoria p {
+        font-size: 1rem;
+    }
+
     .nosotros-texto {
         margin-bottom: 20px;
     }
