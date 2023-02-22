@@ -16,11 +16,11 @@
 }
 
 #lo-nuevo {
-    background-color: $background-color_productos-destacados_1;
+    background-image: linear-gradient(to right bottom, $color_amarillo-logo, #fffabf);
 }
 
 #lo-mas-vendido {
-    background-color: $background-color_productos-destacados_2;
+    background-image: linear-gradient(to left top, $color_azul-logo, rgb(190, 237, 255));
 }
 
 .descripcion-destacados {

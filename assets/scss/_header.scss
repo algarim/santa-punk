@@ -30,6 +30,11 @@
 }
 
 .navbar-buscador {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 95%;
+
     input {
         font-size: 1em;
         font-family: $tipografia-principal;
@@ -37,11 +42,6 @@
         border-radius: 0;
         background-color: $background-color_searchbar;
     }
-
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    width: 95%;
 
     button {
         background-color: $background-color_searchbar;

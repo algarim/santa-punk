@@ -204,11 +204,11 @@ a {
 }
 
 #lo-nuevo {
-  background-color: #FFF047;
+  background-image: linear-gradient(to right bottom, #FFF047, #fffabf);
 }
 
 #lo-mas-vendido {
-  background-color: #73d6ff;
+  background-image: linear-gradient(to left top, #009bde, rgb(190, 237, 255));
 }
 
 .descripcion-destacados {
@@ -334,6 +334,7 @@ a {
   max-width: 100%;
   object-fit: cover;
   height: 75%;
+  border-bottom: 1px solid gray;
 }
 
 .productos-catalogo {
