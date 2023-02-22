@@ -1,0 +1,12 @@
+.nosotros-texto {
+	margin-bottom: 30px;
+}
+.nosotros-imagenes {
+	display: flex;
+	justify-content: space-between;
+	height: 24vw;
+	img {
+		max-height: 100%;
+		margin: 0 10px 15px 10px;
+	}
+}

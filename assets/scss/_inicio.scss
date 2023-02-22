@@ -1,0 +1,77 @@
+.destacados-inicio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 3%;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.productos-destacados {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2vw;
+    flex: 4;
+    margin: 2vw;
+}
+
+#lo-nuevo {
+    background-color: $background-color_productos-destacados_1;
+}
+
+#lo-mas-vendido {
+    background-color: $background-color_productos-destacados_2;
+}
+
+.descripcion-destacados {
+    display: inline-block;
+    text-align: center;
+    flex: 1;
+    margin: 2vw;
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.4rem;
+    }
+}
+
+.tematicas-inicio {
+    margin: 0 3%;
+}
+
+#tematicas-destacadas {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1vw;
+    margin: 2vw 0;
+
+    img {
+        width: 100%;
+        height: 100%;
+        border: 1px black solid;
+    }
+}
+
+#ver-mas {
+    text-align: center;
+    line-height: 3;
+}
+
+.link-ver-mas {
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 10px;
+    background-color: $background-color_boton;
+    width: auto;
+    transition: all 0.1s;
+
+    &:hover {
+        background-color: $color_hover-links;
+        color: white;
+        font-size: 110%;
+    }
+}

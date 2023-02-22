@@ -1,0 +1,63 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 2.1rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.17rem;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 1.0831rem;
+    font-weight: bold;
+}
+
+body {
+    font-family: $tipografia-principal;
+    color: $color_tipografia;
+    background-color: $background-color_body;
+    font-size: 1.17rem;
+    line-height: 1.5;
+    text-align: justify;
+    overflow-x: hidden;
+}
+
+.mayus {
+    text-transform: uppercase;
+}
+
+.botonWhatsApp {
+    img {
+        width: 60px;
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+    }
+}
+
+a {
+    color: $color_links;
+    text-decoration: none;
+}
+
+.color-margenes-header-footer {
+    background-color: $background-color_header-footer;
+    padding: 10px 6%;
+}
