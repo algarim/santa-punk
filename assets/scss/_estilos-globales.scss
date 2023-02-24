@@ -14,7 +14,7 @@ h1 {
 }
 
 h2 {
-    @include titulo(1.5rem); 
+    @include titulo(1.5rem);
 }
 
 h3 {
@@ -27,6 +27,7 @@ h4 {
 
 body {
     @include texto(1.17rem);
+
     color: $color_tipografia;
     background-color: $background-color_body;
     line-height: 1.5;
