@@ -31,8 +31,7 @@
 }
 
 .menu-catalogo-font {
-    font-size: 1.0831rem;
-    font-family: $tipografia-principal;
+    @include texto(1.0831rem);
 }
 
 #menu-paginas-superior {

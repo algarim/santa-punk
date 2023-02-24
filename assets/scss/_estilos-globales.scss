@@ -10,30 +10,25 @@ ul {
 }
 
 h1 {
-    font-weight: bold;
-    font-size: 2.1rem;
+    @include titulo(2.1rem);
 }
 
 h2 {
-    font-size: 1.5rem;
-    font-weight: bold;
+    @include titulo(1.5rem); 
 }
 
 h3 {
-    font-size: 1.17rem;
-    font-weight: bold;
+    @include titulo(1.17rem);
 }
 
 h4 {
-    font-size: 1.0831rem;
-    font-weight: bold;
+    @include titulo(1.0831rem);
 }
 
 body {
-    font-family: $tipografia-principal;
+    @include texto(1.17rem);
     color: $color_tipografia;
     background-color: $background-color_body;
-    font-size: 1.17rem;
     line-height: 1.5;
     text-align: justify;
     overflow-x: hidden;

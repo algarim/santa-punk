@@ -73,8 +73,7 @@ footer {
 
 #newsletter-form {
     input {
-        font-family: $tipografia_principal;
-        font-size: 0.9rem;
+        @include texto(0.9rem);
         padding: 5px;
         margin-top: 5px;
     }

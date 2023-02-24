@@ -1,0 +1,9 @@
+@mixin titulo($size) {
+    font-size: $size;
+    font-weight: bold;
+}
+
+@mixin texto($size) {
+    font-family: $tipografia-principal;
+    font-size: $size;
+}

@@ -34,19 +34,19 @@
 }
 
 .item-formulario {
-    font-size: 1.17rem;
+    @include texto(1.17rem);
+
     padding: 7px;
     margin: 10px 0;
-    font-family: $tipografia-principal;
     width: 600px;
 }
 
 .botones-formulario {
     input {
-        font-size: 1.25rem;
+        @include texto(1.25rem);
+        
         padding: 3px 6px;
         margin-right: 5px;
-        font-family: $tipografia-principal;
     }
 }
 
