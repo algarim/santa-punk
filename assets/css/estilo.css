@@ -32,6 +32,7 @@ h4 {
 body {
   font-family: "Quicksand", sans-serif;
   font-size: 1.17rem;
+  font-weight: normal;
   color: #444444;
   background-color: white;
   line-height: 1.5;
@@ -103,6 +104,7 @@ a {
 .navbar-buscador input {
   font-family: "Quicksand", sans-serif;
   font-size: 1em;
+  font-weight: normal;
   border: none;
   border-radius: 0;
   background-color: white;
@@ -294,6 +296,7 @@ a {
 .menu-catalogo-font {
   font-family: "Quicksand", sans-serif;
   font-size: 1.0831rem;
+  font-weight: normal;
 }
 
 #menu-paginas-superior {
@@ -392,6 +395,11 @@ a {
   margin: auto;
   text-align: center;
 }
+.titulo-categoria h2 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.17rem;
+  font-weight: normal;
+}
 
 .margenes {
   margin-left: 6%;
@@ -429,6 +437,7 @@ a {
 .item-formulario {
   font-family: "Quicksand", sans-serif;
   font-size: 1.17rem;
+  font-weight: normal;
   padding: 7px;
   margin: 10px 0;
   width: 600px;
@@ -437,6 +446,7 @@ a {
 .botones-formulario input {
   font-family: "Quicksand", sans-serif;
   font-size: 1.25rem;
+  font-weight: normal;
   padding: 3px 6px;
   margin-right: 5px;
 }
@@ -548,6 +558,7 @@ footer li {
 #newsletter-form input {
   font-family: "Quicksand", sans-serif;
   font-size: 0.9rem;
+  font-weight: normal;
   padding: 5px;
   margin-top: 5px;
 }
@@ -595,6 +606,7 @@ footer li {
   .menu-catalogo-font {
     font-family: "Quicksand", sans-serif;
     font-size: 1rem;
+    font-weight: normal;
   }
   .nosotros-texto p {
     font-size: 1.05rem;

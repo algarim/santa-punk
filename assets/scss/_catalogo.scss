@@ -140,4 +140,8 @@
 .titulo-categoria {
     margin: auto;
     text-align: center;
+
+    h2{
+        @include texto(1.17rem);
+    }
 }

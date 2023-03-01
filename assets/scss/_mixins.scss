@@ -6,4 +6,5 @@
 @mixin texto($size) {
     font-family: $tipografia-principal;
     font-size: $size;
+    font-weight: normal;
 }
