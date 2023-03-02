@@ -209,11 +209,11 @@ a {
 }
 
 #lo-nuevo {
-  background-image: linear-gradient(to right bottom, #FFF047, #fffabf);
+  background-color: #fdf383;
 }
 
 #lo-mas-vendido {
-  background-image: linear-gradient(to left top, #009bde, rgb(190, 237, 255));
+  background-color: rgb(166, 230, 255);
 }
 
 .descripcion-destacados {
@@ -618,6 +618,14 @@ footer li {
   .articulo-descripcion p {
     font-size: 1rem;
   }
+  .destacados-inicio {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .descripcion-destacados {
+    margin: 0;
+    margin-top: 20px;
+  }
   .productos-destacados {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -652,9 +660,6 @@ footer li {
   }
 }
 @media (max-width: 800px) {
-  .destacados-inicio {
-    flex-direction: column;
-  }
   #boton-ordenar select {
     max-width: 70%;
   }
@@ -707,6 +712,12 @@ footer li {
   .productos-destacados {
     grid-template-columns: repeat(2, 1fr);
   }
+  .descripcion-destacados h2 {
+    font-size: 1.9rem;
+  }
+  .descripcion-destacados p {
+    font-size: 1.17rem;
+  }
   .titulo-categoria p {
     font-size: 1rem;
   }
@@ -741,6 +752,9 @@ footer li {
     align-items: center;
     margin: 0 15px;
   }
+  .tematicas-inicio h2 {
+    font-size: 1.4rem;
+  }
   #footer-logo {
     height: 190px;
   }
@@ -749,8 +763,11 @@ footer li {
   .navbar-buscador input {
     font-size: 1rem;
   }
+  .descripcion-destacados h2 {
+    font-size: 1.8rem;
+  }
   .descripcion-destacados p {
-    display: none;
+    font-size: 1.05rem;
   }
   .link-ver-mas:hover {
     font-size: 100%;
