@@ -79,8 +79,35 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  animation-name: borde-header;
+  animation-duration: 12s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
 }
 
+@keyframes borde-header {
+  0% {
+    border-bottom: 3px solid #f8e4f4;
+  }
+  30% {
+    border-bottom: 3px solid #f8e4f4;
+  }
+  40% {
+    border-bottom: 3px solid #009bde;
+  }
+  50% {
+    border-bottom: 3px solid #dc0083;
+  }
+  60% {
+    border-bottom: 3px solid #FFF047;
+  }
+  70% {
+    border-bottom: 3px solid #f8e4f4;
+  }
+  100% {
+    border-bottom: 3px solid #f8e4f4;
+  }
+}
 #header-logo {
   margin: 4px 0;
 }

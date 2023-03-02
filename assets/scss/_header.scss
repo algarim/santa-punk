@@ -7,6 +7,42 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    animation-name: borde-header;
+    animation-duration: 12s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes borde-header{
+    0%{
+        border-bottom: 3px solid $background-color_header-footer;
+    }
+
+    30%{
+        border-bottom: 3px solid $background-color_header-footer;
+    }
+
+    40%{
+        border-bottom: 3px solid $color_azul-logo;
+    }
+
+    50%{
+        border-bottom: 3px solid $color_hover-links;
+    }
+
+    60%{
+        border-bottom: 3px solid $color_amarillo-logo;
+    }
+
+    70%{
+        border-bottom: 3px solid $background-color_header-footer;
+    }
+
+    100%{
+        border-bottom: 3px solid $background-color_header-footer;
+    }
 }
 
 #header-logo {
