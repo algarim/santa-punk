@@ -70,21 +70,6 @@ a {
   font-family: Old Press Original;
   src: url("../fonts/old-press-original.otf");
 }
-#header {
-  position: sticky;
-  top: 0;
-  z-index: 9;
-  padding-top: 0;
-  padding-bottom: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  animation-name: borde-header;
-  animation-duration: 12s;
-  animation-timing-function: ease-in;
-  animation-iteration-count: infinite;
-}
-
 @keyframes borde-header {
   0% {
     border-bottom: 3px solid #f8e4f4;
@@ -108,6 +93,21 @@ a {
     border-bottom: 3px solid #f8e4f4;
   }
 }
+#header {
+  position: sticky;
+  top: 0;
+  z-index: 9;
+  padding-top: 0;
+  padding-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  animation-name: borde-header;
+  animation-duration: 11s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+}
+
 #header-logo {
   margin: 4px 0;
 }

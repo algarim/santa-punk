@@ -1,20 +1,3 @@
-#header {
-    position: sticky;
-    top: 0;
-    z-index: 9;
-    padding-top: 0;
-    padding-bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    animation-name: borde-header;
-    animation-duration: 12s;
-    animation-timing-function: ease-in;
-    animation-iteration-count: infinite;
-
-}
-
 @keyframes borde-header{
     0%{
         border-bottom: 3px solid $background-color_header-footer;
@@ -43,6 +26,23 @@
     100%{
         border-bottom: 3px solid $background-color_header-footer;
     }
+}
+
+#header {
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    animation-name: borde-header;
+    animation-duration: 11s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+
 }
 
 #header-logo {
