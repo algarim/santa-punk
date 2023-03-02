@@ -10,6 +10,8 @@ footer {
     justify-content: space-between;
     text-align: left;
 
+    box-shadow: 0 50vh 0 50vh $background-color_header-footer;
+
     li {
         list-style-type: none;
     }
