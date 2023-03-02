@@ -192,9 +192,8 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 50px 3%;
-  border: 2px solid black;
   border-radius: 5px;
+  margin: 50px 0;
 }
 
 .productos-destacados {
@@ -350,7 +349,6 @@ a {
 .articulo-descripcion {
   padding: 5px;
   text-align: center;
-  font-size: 1rem;
   height: 25%;
   display: flex;
   flex-direction: column;
@@ -360,10 +358,12 @@ a {
 .articulo-descripcion h6 {
   padding: 0;
   margin: 0;
+  font-size: 1.17rem;
 }
 .articulo-descripcion p {
   padding: 0;
   margin: 0;
+  font-size: 1.17rem;
 }
 
 .articulo-comprar {
@@ -483,7 +483,7 @@ a {
 }
 
 .pregunta-respuesta {
-  margin: 20px 10px;
+  margin: 50px 10px;
 }
 .pregunta-respuesta p {
   font-size: 1.0831rem;
@@ -574,6 +574,12 @@ footer li {
   #footer-logo {
     height: 250px;
   }
+  .articulo-descripcion h6 {
+    font-size: 1.05rem;
+  }
+  .articulo-descripcion p {
+    font-size: 1.05rem;
+  }
   #newsletter {
     flex: 1 1 50%;
   }
@@ -596,6 +602,12 @@ footer li {
   }
   .articulo-catalogo:hover {
     transform: none;
+  }
+  .articulo-descripcion h6 {
+    font-size: 1rem;
+  }
+  .articulo-descripcion p {
+    font-size: 1rem;
   }
   .productos-destacados {
     grid-template-columns: repeat(3, 1fr);

@@ -8,3 +8,13 @@
     font-size: $size;
     font-weight: normal;
 }
+
+@mixin h6-p_font-size($size) {
+        h6 {
+            font-size: $size;
+        }
+    
+        p {
+            font-size: $size;
+        }
+}

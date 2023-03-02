@@ -6,6 +6,10 @@
     #footer-logo {
         height: 250px;
     }
+    
+    .articulo-descripcion {
+        @include h6-p_font-size(1.05rem)
+    }
 
     #newsletter {
         flex: 1 1 50%;
@@ -47,6 +51,10 @@
         &:hover {
             transform: none;
         }
+    }
+
+    .articulo-descripcion {
+        @include h6-p_font-size(1rem)
     }
 
     .productos-destacados {
