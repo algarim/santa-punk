@@ -179,10 +179,12 @@
 
     .productos-catalogo {
         grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
     }
 
     .productos-destacados {
         grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
     }
 
     .descripcion-destacados {
