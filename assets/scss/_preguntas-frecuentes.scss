@@ -4,7 +4,11 @@
 		font-size: 1.0831rem;
 	}
 	a {
-		color: blue;
+		color: rgb(50, 50, 255);
 		text-decoration: underline;
+
+		&:hover {
+			opacity: 0.82;
+		}
 	}
 }

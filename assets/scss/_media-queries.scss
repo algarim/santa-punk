@@ -150,6 +150,17 @@
     .desaparecer-800px {
         display: none;
     }
+    
+    .aparecer-800px {
+        display: block;
+    }
+
+    .carousel-item {
+        img {
+            object-fit: cover;
+            aspect-ratio: 960/890;
+        }
+    }
 }
 
 @media (max-width: 600px) {
@@ -209,9 +220,10 @@
 
     .nosotros-imagenes {
         height: auto;
+        justify-content: center;
 
         img {
-            width: 88vw;
+            width: 100%;
             margin: 0;
         }
     }
@@ -242,7 +254,7 @@
     }
 
     .tematicas-inicio {
-        h2{
+        h2 {
             font-size: 1.4rem;
         }
     }

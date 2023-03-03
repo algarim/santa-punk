@@ -66,6 +66,10 @@ a {
   padding: 10px 6%;
 }
 
+.aparecer-800px {
+  display: none;
+}
+
 @font-face {
   font-family: Old Press Original;
   src: url("../fonts/old-press-original.otf");
@@ -219,6 +223,24 @@ a {
   font-weight: bold;
 }
 
+.carousel-control-prev, .carousel-control-next {
+  background-color: #e1e1e1;
+  width: 6vh;
+  height: 6vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-inner {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.carousel-item img {
+  object-fit: contain;
+  aspect-ratio: 1920/680;
+}
+
 .destacados-inicio {
   display: flex;
   align-items: center;
@@ -270,6 +292,7 @@ a {
 #tematicas-destacadas img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
   box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
 }
 
@@ -523,8 +546,11 @@ a {
   font-size: 1.0831rem;
 }
 .pregunta-respuesta a {
-  color: blue;
+  color: rgb(50, 50, 255);
   text-decoration: underline;
+}
+.pregunta-respuesta a:hover {
+  opacity: 0.82;
 }
 
 footer {
@@ -715,6 +741,13 @@ footer li {
   .desaparecer-800px {
     display: none;
   }
+  .aparecer-800px {
+    display: block;
+  }
+  .carousel-item img {
+    object-fit: cover;
+    aspect-ratio: 960/890;
+  }
 }
 @media (max-width: 600px) {
   .desaparecer-600px {
@@ -754,9 +787,10 @@ footer li {
   }
   .nosotros-imagenes {
     height: auto;
+    justify-content: center;
   }
   .nosotros-imagenes img {
-    width: 88vw;
+    width: 100%;
     margin: 0;
   }
 }
