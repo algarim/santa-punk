@@ -179,6 +179,9 @@ a {
   text-align: center;
 }
 
+.navbar ul li a {
+  color: #5c5b5b;
+}
 .navbar ul li a:hover {
   color: #dc0083;
   opacity: 100%;
@@ -417,10 +420,6 @@ a {
   padding: 0;
   margin: 0;
   font-size: 1.17rem;
-}
-
-.articulo-comprar {
-  display: none;
 }
 
 .filtros-catalogo {

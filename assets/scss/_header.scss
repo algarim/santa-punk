@@ -119,6 +119,7 @@
     ul {
         li {
             a {
+                color: $color_tipografia-navbar;
                 &:hover {
                     color: $color_hover-links;
                     opacity: 100%;
