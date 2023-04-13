@@ -29,7 +29,7 @@ let seleccionCarrito;
 // Defino el ciclo por el cual el usuario agrega productos al carrito
 
 while (seleccionCarrito != 3) {
-    seleccionBienvenida = Number(prompt("¡Bienvenido a la tienda de Santa Punk! \n\nElegí un producto para agregar al carrito: \n\n 1. Almohadón Harry Potter - $ 2600 \n 2. Cuaderno Totoro - $ 2500 \n 3. Combo Mario Bros - $ 7600 \n\n También podés acceder al carrito para revisar los productos elegidos y ver el precio final: \n\n4. Ver carrito"));
+    seleccionBienvenida = Number(prompt("¡Bienvenido a la tienda de Santa Punk! \n\nElegí un producto para agregar al carrito: \n\n 1. Almohadón Harry Potter - $ 2600 \n 2. Cuaderno Totoro - $ 2500 \n 3. Combo Mario Bros - $ 7600 \n\nTambién podés acceder al carrito para revisar los productos elegidos y ver el precio final: \n\n4. Ver carrito"));
 
     switch (seleccionBienvenida) {
 
@@ -49,13 +49,14 @@ while (seleccionCarrito != 3) {
             break;
 
         case 4:
-            seleccionCarrito = Number(prompt("Carrito \n\n Almohadon Harry Potter - " + almohadonCantidad + " unidad/es \n Cuaderno Totoro - " + cuadernoCantidad + " unidad/es \n Combo Mario Bros - " + comboCantidad + " unidad/es \n\n Precio total: $ " + precioTotal + "\n\n 1. Elegir otro producto \n 2. Vaciar carrito \n 3. Finalizar compra"))
+            seleccionCarrito = Number(prompt("Tu carrito: \n\n Almohadon Harry Potter - " + almohadonCantidad + " unidad/es \n Cuaderno Totoro - " + cuadernoCantidad + " unidad/es \n Combo Mario Bros - " + comboCantidad + " unidad/es \n\n Precio total: $ " + precioTotal + "\n\n 1. Elegir otro producto \n 2. Vaciar carrito \n 3. Finalizar compra"))
 
             if (seleccionCarrito == 2) {
                 precioTotal = 0;
                 almohadonCantidad = 0;
                 cuadernoCantidad = 0;
                 comboCantidad = 0;
+                alert("Se vació el carrito")
             }
             else if ( (seleccionCarrito != 1) && (seleccionCarrito != 3) ) {
                 alert("Comando no reconocido. Por favor, ingrese el número correspondiente a la opción elegida.")
