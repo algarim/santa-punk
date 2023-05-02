@@ -18,7 +18,7 @@ const almohadon2 = new Producto ("Almohadon Totoro", 2600)
 
 const listaDeProductos = [almohadon, cuaderno, combo, almohadon2];
 
-// Usando el método map, creo un array que contenga todos los enteros desde 1 hasta la longitud del array (en este caso: [1,2,3])
+// Usando el método map, creo un array que contenga todos los enteros desde 1 hasta la longitud del array
 
 indicesDeProductos = listaDeProductos.map( (producto) => listaDeProductos.indexOf(producto) + 1 );
 
